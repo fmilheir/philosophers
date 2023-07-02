@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philosopher.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcharouh <mcharouh@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: filipe <filipe@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 00:30:53 by mcharouh          #+#    #+#             */
-/*   Updated: 2022/11/02 00:30:53 by mcharouh         ###   ########.fr       */
+/*   Created: 2022/11/02 00:30:53 by fmilheir         #+#    #+#             */
+/*   Updated: 2022/11/02 00:30:53 by fmilheir        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,10 @@ void		mini_print(t_philo *philo, char *str, long time);
 
 //Routine functions
 void		*routine(void *philo);
+void		routine2(t_philo *philo);
 void		routine_est(t_philo *philo);
+void		deal_pair(t_philo *philo);
+void		deal_odd(t_philo *philo);
 
 //Monitoring functions 
 int			prompt_death(t_philo *philo);
